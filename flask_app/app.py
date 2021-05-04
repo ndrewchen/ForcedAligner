@@ -36,7 +36,6 @@ def upload_file():
         f2 = request.files['textfile']
         if allowed_file(f1.filename) and allowed_file(f2.filename):
             f1.save(os.path.join(app.config['UPLOAD_FOLDER'], 'foo.wav'))
-            # f1.save(os.path.join('static', 'foo.wav'))
             f2.save(os.path.join(app.config['UPLOAD_FOLDER'], 'foo.txt'))
             subprocess.call(['sh', '../aligner_script.sh'])
             return render_template('play.html', transcript=interpret_textgrid())
