@@ -1,0 +1,6 @@
+openblas
+python=3.8
+openfst
+pynini
+ngram
+baumwelch
