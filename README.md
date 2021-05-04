@@ -6,7 +6,8 @@ To set this project up, you need to proceed with the following steps:
 1. Install Conda for Python 3.8
 2. Clone this repository
 3. Run these commands to setup MFA
-   - ```conda install --file conda-requirements.txt```
+   - ```conda create -n aligner -c conda-forge openblas python=3.8 openfst pynini ngram baumwelch```
+   - ```conda activate aligner```
    - ```pip install montreal-forced-aligner```
    - ```mfa thirdparty download```
    - ```mfa download acoustic english```
