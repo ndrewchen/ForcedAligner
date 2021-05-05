@@ -1,6 +1,6 @@
 # Forced Aligner
 
-This project hooked up Flask with the Montreal Forced Aligner (MFA) to create a webpage that, when given a .wav audio file and a .txt transcript, plays the audio file back while simultaneously printing the transcript. Due to cache issues, it works best in incognito mode. 
+This project hooked up Flask with the Montreal Forced Aligner (MFA) to create a webpage that, when given a .wav audio file and a .txt transcript, plays the audio file back while simultaneously printing the transcript.
 
 ## Setup
 To set this project up, you need to proceed with the following steps:
@@ -18,7 +18,7 @@ To set this project up, you need to proceed with the following steps:
    - ```export FLASK_APP=app```
    - ```flask run```
 
-The webpage can now be found at the address http://127.0.0.1:5000/. Open it in an incognito window.
+The webpage can now be found at the address http://127.0.0.1:5000/. 
 
 ## Video demonstration
 
