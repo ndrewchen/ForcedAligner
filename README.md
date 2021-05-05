@@ -22,8 +22,7 @@ The webpage can now be found at the address http://127.0.0.1:5000/.
 
 ## Video demonstration
 
-A video demonstration is available here:
-https://youtu.be/53vgKs7uGMc
+A video demonstration is available here: https://youtu.be/dirdbHHzgwA
 
 ## Next Steps
 There were a lot of areas that could be improved (this is my first time using MFA and Flask), here are what I believe to be the lowest-hanging fruit that would increase performance significantly:
