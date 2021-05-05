@@ -12,7 +12,7 @@ To set this project up, you need to proceed with the following steps:
    - ```pip install montreal-forced-aligner```
    - ```mfa thirdparty download```
    - ```mfa download acoustic english```
-4. Install the packages ```flask``` and ```textgrid``` to setup the flask app
+4. Install the packages ```flask```, ```textgrid```, and ```string``` to setup the flask app
 5. Run these commands to run ```app.py```
    - ```cd flask_app```
    - ```export FLASK_APP=app```
@@ -28,8 +28,5 @@ https://youtu.be/53vgKs7uGMc
 ## Next Steps
 There were a lot of areas that could be improved (this is my first time using MFA and Flask), here are what I believe to be the lowest-hanging fruit that would increase performance significantly:
 
-- Redesigning the flow of the website so the cache issue no longer exists
-- Training custom, more extensive models using MFA. In the 2nd and 3rd test, rare/unclear words were frequently missed and it would be nice to catch them.
-- Realign the MFA output text to the input text (DTW?). This would serve 2 purposes:
-   1. Re-incorporate capitalization and grammar that was cleaned by MFA
-   2. If a word was missed by MFA, we could approximate the starting time of the missed word based on the starting and ending time of its adjacent words. 
+- Training custom, more extensive models using MFA. In the 2nd and 3rd test, rare/unclear words were frequently missed and it would be nice to catch them instead of having to estimate it.
+- Designing a better estimation algorithm for unknown words
