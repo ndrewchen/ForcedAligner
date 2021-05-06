@@ -1,6 +1,6 @@
 # Forced Aligner
 
-This project hooked up Flask with the Montreal Forced Aligner (MFA) to create a webpage that, when given a .wav audio file and a .txt transcript, plays the audio file back while simultaneously printing the transcript.
+This project hooked up Flask with the Montreal Forced Aligner (MFA) to create a webpage that, when given a .wav audio file and a .txt transcript, plays the transcript synced up with the audio.
 
 ## Setup
 To set this project up, you need to proceed with the following steps:
@@ -19,6 +19,16 @@ To set this project up, you need to proceed with the following steps:
    - ```flask run```
 
 The webpage can now be found at the address http://127.0.0.1:5000/. 
+
+Some mistakes that I've made in the process (that you should check if it isn't working on your end):
+- Not being in the ```aligner```conda environment
+- Not being in the ```flask_app``` directory
+- Not running Conda for python 3.8
+
+## How to use the webpage
+There are 2 pages total:
+1. Uploading page (http://127.0.0.1:5000/) - Upload your audio files and transcripts on this page. 
+2. Play page (http://127.0.0.1:5000/play/) - Play your most recently uploaded audio file synced up with its transcript on this page.
 
 ## Video demonstration
 
